@@ -1,0 +1,28 @@
+Bug 1#
+
+The first bug was found with the program failing the emptySet_testIsEmpty.
+To solve this bug I created a break point at the call of the test.
+By walking through each method I learned that the isEmpty() method only returned (rear > 0).
+This caused the program to return false if rear>0 but that would mean in an empty list when rear=0
+then it would return false.
+I fixed this by returning false if rear is greater then 0 or less than 0 and true in any other case.
+
+Bug 2#
+
+The second bug that I found was located in the add(T element) method when failing emptySet_addA_A_testIsEmpty.
+To solve this bug i set my break point at the test and walked through each step of the testIsEmpty method.
+While walking through I cam to the add(T element) method and noticed that when an element was added it would
+check to see if anything was in the array then would add the given element to the array if the given element
+was not already located within the array.  The end of the add method set the rear value to element but does not move
+the location of rear.
+To fix the bug I added a rear++ to the end of the add file.
+
+Bug 3#
+
+The third bug that I located was in the AB_removeA_B_testRemoveA test.
+To find the exact location of the bug I placed a breakpoint at the start of the test.
+When walking through the code i had a few issues of walking in classes outside of those given
+as well as walking past the bug.
+I soon noticed that the way that the while loop was running checked to see if i<rear but after that check
+the code within the loop would attempt to access i+1 causing the index out of bounds error.
+I then changed the code from the given while(i<rear){} to the new while(i+1<rear){}.

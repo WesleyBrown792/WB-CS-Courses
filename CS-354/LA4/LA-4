@@ -1,0 +1,43 @@
+#!/usr/bin/awk -F
+
+
+BEGIN{
+	FPAT = "([^,]+)|(\"[^\"]+\")"
+	print "<html>\n <head>List of Public Building Permits</head>\n <body> \n <table>"
+	print "<tr> <td>Name</td><td>Value</td><td>Date</td><td>Block</td><td>Lot</td></tr>"
+}
+
+{
+  if(substr($8, 1, 1)=="\""){
+      len=length($8)
+      $8=substr($8, 2, len-2)
+  }
+  if(substr($6, 1, 1)=="\""){
+     len = length($6)
+     $6 = substr($6, 2, len - 2)
+  }
+}
+
+{
+  if(substr($6, 1, 1)=="$"){
+      if(tolower($3) ~ /single family dwelling/){
+  		print "<tr>" 
+  		print "<td>"$5"</td>" 
+      print "<td>"$6"</td>"
+      print "<td>"$1"</td>" 
+      print "<td>"  "</td>"
+  		print "<td>"  "</td>" 
+  		print "</tr>" 
+    }
+  }else{
+      if(tolower($3) ~ /single family dwelling/){
+  		print "<tr>" 
+  		print "<td>"$5"</td>" 
+      print "<td>"$8"</td>"
+      print "<td>"$1"</td>" 
+      print "<td>"$7"</td>"
+  		print "<td>"$6"</td>" 
+  		print "</tr>" 
+    }
+  }
+}  

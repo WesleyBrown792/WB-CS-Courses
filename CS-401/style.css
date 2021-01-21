@@ -1,0 +1,82 @@
+body{
+    text-align: center;
+    font-family: "Work Sans", sans-serif;
+
+}
+
+div{
+    padding: 10px;
+}
+/* there should be a way to make boxes around each portion and change the color around current portions*/
+ul{
+    position: fixed;
+    background-color: black; 
+    object-position: center;
+    width: 100%;
+    list-style-type: none;
+    color: black;
+}
+
+li{
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 4px 6px;
+  text-decoration: none;
+}
+
+li a:hover{
+  background-color: gray;
+}
+
+
+
+#page-container {
+  margin-top: 10%;
+  /* position: absolute; */
+}
+
+  
+footer {
+    
+    bottom: 0;
+    width: 100%;
+    height: 3px;            /* Footer height */
+}
+
+table{
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+    object-position: center;
+}
+
+table, th, td{
+    border: 3px solid black;
+    font-size: 20px;
+}
+
+th{
+    background-color: grey;
+}
+
+td{
+    font-size: 20px;
+    padding: 10 10;
+    margin-top: 15px;
+}
+
+/* .center{
+    margin-left: 25%;
+    margin-right: 25%;
+    margin: 0 auto;
+} */
+
+.active{
+  background-color: white;
+  color: black;
+}

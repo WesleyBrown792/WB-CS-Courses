@@ -1,0 +1,4 @@
+InvalidFileFormatException: Too many cols
+	at CircuitBoard.<init>(CircuitBoard.java:109)
+	at CircuitTracer.<init>(CircuitTracer.java:64)
+	at CircuitTracer.main(CircuitTracer.java:27)

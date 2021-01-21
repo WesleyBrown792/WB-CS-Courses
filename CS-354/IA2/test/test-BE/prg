@@ -1,0 +1,1 @@
+begin x=0.0; begin x=1.0 end; wr x end

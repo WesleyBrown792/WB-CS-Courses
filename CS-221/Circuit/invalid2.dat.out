@@ -1,0 +1,4 @@
+InvalidFileFormatException: Too Many Ending Points
+	at CircuitBoard.<init>(CircuitBoard.java:100)
+	at CircuitTracer.<init>(CircuitTracer.java:64)
+	at CircuitTracer.main(CircuitTracer.java:27)

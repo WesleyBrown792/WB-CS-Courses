@@ -1,0 +1,1 @@
+rd x; if x<>0.0 then wr 1.0

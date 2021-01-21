@@ -1,0 +1,4 @@
+InvalidFileFormatException: Too many rows
+	at CircuitBoard.<init>(CircuitBoard.java:114)
+	at CircuitTracer.<init>(CircuitTracer.java:64)
+	at CircuitTracer.main(CircuitTracer.java:27)

@@ -1,0 +1,21 @@
+1. Using a blank line as the first command
+2. Using a blank line as any command
+3. Using spaces as the first command
+4. Using spaces as any command
+5. Starting with an unimplimented command
+6. Using an unimplimented command
+7. Starting with cd
+8. Using cd
+9. Starting with history
+10. Using history
+11. Starting with cd to a non-existant directory
+12. Using cd to a non-existant directory
+13. Starting with the exit command
+14. Using the exit command
+15. Starting with an EOF
+16. Using an EOF
+17. Starting with a very long command
+18. Using a very long command
+19. Using many commands, like about 300
+20. Using any of the above commands multiple times
+21. Doing any of the above commands in any order

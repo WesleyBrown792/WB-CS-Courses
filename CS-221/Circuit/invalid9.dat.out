@@ -1,0 +1,4 @@
+InvalidFileFormatException: Had a value which was not an int
+	at CircuitBoard.<init>(CircuitBoard.java:54)
+	at CircuitTracer.<init>(CircuitTracer.java:64)
+	at CircuitTracer.main(CircuitTracer.java:27)

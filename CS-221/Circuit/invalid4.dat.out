@@ -1,0 +1,4 @@
+InvalidFileFormatException: No Start Point
+	at CircuitBoard.<init>(CircuitBoard.java:117)
+	at CircuitTracer.<init>(CircuitTracer.java:64)
+	at CircuitTracer.main(CircuitTracer.java:27)

@@ -1,0 +1,1 @@
+if 5.0>6.0 then wr 5.0 else wr 6.0; if 5.0<6.0 then wr 5.0 else wr 6.0;

@@ -1,0 +1,4 @@
+InvalidFileFormatException: Char Used Which Should Not Be Used In File
+	at CircuitBoard.<init>(CircuitBoard.java:105)
+	at CircuitTracer.<init>(CircuitTracer.java:64)
+	at CircuitTracer.main(CircuitTracer.java:27)

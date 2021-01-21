@@ -1,0 +1,3 @@
+To use this Circuit Tracer enter in your commandline arguments as follows:
+java CircuitTracer -s/-q -c <name of input file>
+If you follow the above order of command the program will work as intended also the -g command does not work yet and the proram will exit out if it is used.
